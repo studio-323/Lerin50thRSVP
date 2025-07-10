@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Allenoire;
+    src: url(Fonts/Allenoire\ Font.otf);
+}
+
+body{
+    margin: 0;
+  overflow-y: hidden;
+
+
+    -webkit-user-select: none !important; /* Safari */
+    -moz-user-select: none !important;    /* Firefox */
+    -ms-user-select: none !important;     /* IE 10 and IE 11 */
+    user-select: none !important;         /* Standard syntax */
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a:link{
+    text-decoration: none!important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+
+.hidden {
+opacity: 0;
+filter: blur(5px);
+transform: translateY(50%);
+transition: all 0.80s;
+}
+
+.show {
+opacity: 1;
+filter: blur(0px);
+transform: translateX(0%);
+}
+
+.logo:nth-child(1) {
+transition-delay: 100ms ;
+}
+
+.logo:nth-child(2) {
+transition-delay:200ms ;
+}
+
+.logo:nth-child(3) {
+transition-delay:300ms ;
+}
+
+.logo:nth-child(4) {
+transition-delay:400ms ;
+}
+
+.logo:nth-child(5) {
+transition-delay: 500ms ;
+}
+.logo:nth-child(6) {
+transition-delay: 600ms ;
+}
+
+.logo:nth-child(7) {
+transition-delay: 700ms ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid-display{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    background-color: #ffb30d;
+    gap: 10px;
+    grid-template-rows: 1fr auto;
+
+
+    .frame1{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container{
+            width: 100%;
+            height: 420px;
+
+            .title1{
+                font-family: inter;
+                font-size: 18px;
+                text-align: center;
+                color: black;
+            }
+            .title2{
+                font-family: inter;
+                font-size: 32px;
+                text-align: center;
+                color: white;
+                font-weight: 900;
+            }
+            .title3{
+                font-family: allenoire;
+                font-size: 162px;
+                text-align: center;
+                color: white;
+                font-weight: 900;
+            }
+
+            .img-container{
+                width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -130px;
+                display: flex;
+                justify-content: center;
+
+                .img{
+                    width: 300px;
+                }
+            }
+
+            .title4{
+                font-family: inter;
+                font-size: 66px;
+                text-align: center;
+                color: white;
+                font-weight: 900;
+                margin-top: -50px;
+            }
+        }
+    }
+
+
+
+
+    .frame2{
+        width: 100%;
+        height: 290px;
+        background-color: #ffffff;
+        padding-bottom: 10px;
+        align-self: end;
+        z-index: 6;
+        
+
+        .subtitle{
+            font-family: inter;
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            margin-top: 30px;
+        }
+
+        .title{
+            font-family: allenoire;
+            font-size: 26px;
+            text-align: center;
+            color: black; 
+            margin-top: 4px;
+        }
+
+        .button{
+            width: 130px;
+            height: 46px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 26px;
+            border-radius: 100px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+
+            .title{
+                font-family: allenoire;
+                font-size: 14px;
+                text-align: center;
+                color: rgb(255, 255, 255); 
+                margin-top: 4px;
+            }
+        }
+
+        .button:hover{
+            transform: scale(0.9);
+            background-color: #ffb30d;
+
+            .title{
+                color: black;
+            }
+        }
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Elements/favicon.png">
+
+    <!--JAVA SCRIPT-->
+    <script defer src="../app.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--GOOGLE ICONS MATERIAL ROUNDED-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,1,0" rel="stylesheet">
+
+    <!--INTER FONT FAMILY-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <title>RSVP</title>
+</head>
+<body>
+
+    <script type="text/javascript">var submitted=false</script>
+    <iframe name="hiddenConfirm" id="hiddenConfirm" style="display: none;" onload="if(submitted){
+    window.location='../Confirmation/index.html';}"></iframe>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdrDl4y3wk1EqUQC_zaezSvBYh1i81vWeGJvo9pRzd3cEyxGw/formResponse" method="post" target="hiddenConfirm" onsubmit="submitted=true">
+
+    <div class="topbar">
+        <a href="../index.html">
+            <div class="button">
+                <span class="material-symbols-rounded">
+                arrow_back
+                </span>
+            </div>
+        </a>
+
+        <div class="subtitle">You're invited to celebrate</div>
+
+        <div class="logo hidden">
+            <div class="title">Lerin Hermosa’s <br> 50th Birthday</div>
+        </div>
+    </div>
+
+    <div class="event-details">
+        <div class="title">Event Details</div>
+
+        <div class="logo hidden">
+            <div class="divider"></div>
+        </div>
+
+        <div class="logo hidden">
+            <div class="flex-box">
+                <span class="material-symbols-rounded">
+                calendar_month
+                </span>
+
+                <div class="text-container">
+                    <div class="title">Time & Date</div>
+
+                    <div class="flex">
+                        <div class="details">July 19, 2025 Saturday</div>
+                        <div class="time">5:00 PM</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo hidden">
+            <div class="divider"></div>
+        </div>
+
+        <div class="logo hidden">
+            <div class="flex-box">
+                <span class="material-symbols-rounded">
+                directions
+                </span>
+
+                <div class="text-container">
+                    <div class="title">Place</div>
+                    <div class="details">Sonoma Clubhouse Premier, Santa Elena City, Barangay Don Jose, Santa Rosa, 4026 Laguna</div>
+
+                    <a href="https://maps.app.goo.gl/qLr59WWpeEJQUJsf6">
+                        <div class="btn">
+                            <div class="details">Navigate</div>
+
+                            <span class="material-symbols-rounded">
+                            arrow_forward
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="frame">
+        <div class="bar"></div>
+
+        <div class="text-container">
+            <div class="title">Guest Details</div>
+            <div class="details">Please fill up all the necessary information, <br>we are hoping to see you there!</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="input-group">
+            <div class="title">Full Name</div>
+            <div class="form-element">
+                <input type="Name" name="entry.753522659" placeholder="">
+            </div>                
+        </div>
+
+        <div class="input-group">
+            <div class="title">Will we see you there?</div>
+                <div class="content-container">
+                    <label for="" class="logo hidden">
+                        <div class="div">
+                            <div class="title">Yes!</div>
+                            <input type="checkbox" name="entry.156930773" id="Yes" value="Yes">
+                        </div>
+                    </label>      
+                    
+                    <label for="" class="logo hidden">
+                        <div class="div">
+                            <div class="title">No...</div>
+                            <input type="checkbox" name="entry.156930773" id="No" value="No">
+                        </div>
+                    </label> 
+                </div>  
+            </div>
+            <div class="btn-container">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
